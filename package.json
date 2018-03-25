@@ -1,0 +1,27 @@
+{
+  "name": "share-files",
+  "version": "1.0.2",
+  "description": "Share files from your computer to mobile phone in same network using qr code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "share",
+    "files",
+    "qr",
+    "code",
+    "same",
+    "network",
+    "share",
+    "files"
+  ],
+  "author": "Anto Aravinth",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^2.1.1",
+    "express": "^4.16.3",
+    "minimist": "^1.2.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
