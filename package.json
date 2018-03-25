@@ -1,6 +1,6 @@
 {
   "name": "share-files",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Share files from your computer to mobile phone in same network using qr code",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "files"
   ],
   "author": "Anto Aravinth",
+  "repository": "https://github.com/antoaravinth/share-files",
   "license": "MIT",
   "dependencies": {
     "archiver": "^2.1.1",

@@ -25,7 +25,7 @@ const processCmdInput = () => {
 	const stdin = process.openStdin();
 	console.log("\n\nAvailable interfaces:")
 	Object.keys(interfaces).forEach((interface,index) => {
-		console.log(`${(index+1)}:${interface}`)
+		console.log(`${interface}`)
 	})
 	console.log("Type your interface down like en0 and press enter:")
 	stdin.addListener("data",(val) => {
