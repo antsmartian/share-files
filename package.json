@@ -1,6 +1,6 @@
 {
   "name": "share-files",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Share files from your computer to mobile phone in same network using qr code",
   "main": "index.js",
   "scripts": {

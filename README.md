@@ -3,6 +3,20 @@ Share-files is a simple tool to create a file share service using nodejs. You ca
 
 Note that, mobile should be in the same network to download the file.
 
+![screenshot](demo.gif)
+
+#### How does it work?
+
+This tool binds a web server to the address of your wifi network interface on a 3000 port, and sets a default handler for it. The default handler serves the content.
+
+The program prints a QR code that encodes the text:
+
+```
+http://{address}:3000
+```
+
+Most QR apps can detect URLs in decoded text and act accordingly (i.e.: open the URL with the default browser), so when QR the code is scanned the content starts being downloaded by the mobile browser.
+
 #### How to run:
 First, install the `share-files`:
 
