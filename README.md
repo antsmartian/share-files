@@ -41,7 +41,7 @@ share-files --files <path-to-file>,<path-to-file>,<path-to-file>
 separate multiple files with `,` and the code will be generated once the zip file is created. Once that is done, you can scan the QR code to download the file. 
 
 #### Why?
-I always wanted to share files/movies from my mac to my phone. I used Airdrop and it annoys with signup etc, so I created one. Anyways, its fun :)
+I always wanted to share files/movies from my mac to my phone. I used Airdroid and it annoys me with signup etc so I created one. Anyways, its fun :)
 
 #### Todo:
 1. Support HTTPS
