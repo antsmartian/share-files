@@ -1,9 +1,9 @@
-#### share-files
+### share-files
 Share-files is a simple tool to create a file share service using nodejs. You can list files and share-files will generate QR code. Scan the QR code in mobile to download the files! Supports zip and multiple files!
 
 Note that, mobile should be in the same network to download the file.
 
-### How to run:
+#### How to run:
 First, install the `share-files`:
 
 ```
