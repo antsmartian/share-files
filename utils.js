@@ -23,7 +23,7 @@ const zip = (paths,cb) => {
 
 const checkMandatoryArgs = (args) => {
 	if(!args.files) {
-		console.error("--file argument is required")
+		console.error("--files <pathname> is required");
 		process.exit(1);
 	} else { //check if all given files are present
 		let files = args.files.split(",");

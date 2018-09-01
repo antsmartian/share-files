@@ -19,6 +19,12 @@ const handleEndpoint = (path) => {
 	});
 }
 
+// capitalize the string
+function capitalize(str) {
+		let firstLetter = str.charAt(0).toUpperCase();
+		return firstLetter.concat(str.substring(1));
+}
+
 //process command line input 
 //and start the server
 const processCmdInput = () => {
@@ -29,7 +35,7 @@ const processCmdInput = () => {
 	})
 	console.log("Type your interface down like en0 and press enter:")
 	stdin.addListener("data",(val) => {
-		const selectedOption = val.toString().trim()
+		const selectedOption = capitalize(val.toString().trim());
 		console.log(`you entered: ${selectedOption}`);
 		let selectedInterface = interfaces[selectedOption] && interfaces[selectedOption].find((interface) => {
 			return interface.family === 'IPv4'
@@ -37,7 +43,7 @@ const processCmdInput = () => {
 
 		if(selectedInterface) {
 			console.log("\n\nQR Code generated : Please scan and download the file")
-			qrcode.generate(`http://${selectedInterface.address}:3000/download`);
+			qrcode.generate(`http://${selectedInterface.address}:3000/download`, { small: true });
 			app.listen(3000, selectedInterface.address)
 			stdin.removeAllListeners('data') //no need to listen console prompt
 		} else {
